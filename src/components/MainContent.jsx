@@ -188,7 +188,7 @@ const MainContent = () => {
             <Typography
         variant="h1"
         sx={{
-          fontSize: { xs: '3rem', sm: '3rem' },
+          fontSize: { xs: '2.5rem', sm: '3rem' },
           marginTop: { xs: 10, sm:5 }, // إزالة المارجين من فوق
           lineHeight: 1, // تقليل المسافة بين السطور عشان النص يبقى أقرب للي فوقه
           fontWeight: 900,
