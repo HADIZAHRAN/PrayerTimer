@@ -12,6 +12,7 @@ import FormControl from "@mui/material/FormControl";
 import Axios from "axios";
 import { useState, useEffect } from "react";
 import moment from 'moment';
+import Typography from "@mui/material/Typography";
 // import "moment/dist/locale/ar";
 // moment.locale('ar');
 // import { styled } from '@mui/material/styles';
@@ -184,7 +185,17 @@ const MainContent = () => {
         <Grid size={6}>
           <div>
             <h3 style={{ opacity: "0.8" }}>متبقي حتي صلاة {prayersArray[nextPrayerIndex].displayName}</h3>
-            <h1>{remainingTime}</h1>
+            <Typography
+        variant="h1"
+        sx={{
+          fontSize: { xs: '3rem', sm: '3rem' },
+          marginTop: { xs: 10, sm:5 }, // إزالة المارجين من فوق
+          lineHeight: 1, // تقليل المسافة بين السطور عشان النص يبقى أقرب للي فوقه
+          fontWeight: 900,
+        }}
+      >
+        {remainingTime}
+      </Typography>
           </div>
         </Grid>
       </Grid>
